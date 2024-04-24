@@ -1,5 +1,5 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "TibberRadar",
   "pluginType": "platform",
   "singular": true,
   "schema": {
@@ -9,7 +9,28 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": "Tibber Radar"
+      },
+      "radar": {
+        "title": "Radar",
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "title": "Some ID, if it is changed room and automations in Home-App may be reset",
+              "type": "string",
+              "required": true,
+              "default": "Radar-1"
+            },
+            "displayName": {
+              "title": "Name to display in Homekit",
+              "type": "string",
+              "required": true,
+              "default": "Tibber"
+            }
+          }
+        }
       }
     }
   }

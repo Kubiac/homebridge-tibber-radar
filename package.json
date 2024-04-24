@@ -1,16 +1,16 @@
 {
   "private": true,
-  "displayName": "Plugin Name",
-  "name": "homebridge-plugin-name",
-  "version": "1.0.0",
-  "description": "A short description about what your plugin does.",
+  "displayName": "Tibber Radar",
+  "name": "homebridge-tibber-radar",
+  "version": "0.1.0",
+  "description": "Integrate several sensor that indicate tibber price levels with various thresholds.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "git+https://github.com/Kubiac/homebridge-tibber-radar.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "https://github.com/Kubiac/homebridge-tibber-radar/issues"
   },
   "engines": {
     "node": "^18.17.0 || ^20.9.0",
@@ -36,5 +36,8 @@
     "rimraf": "^5.0.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "homebridge-config-ui-x": "^4.56.1"
   }
 }
